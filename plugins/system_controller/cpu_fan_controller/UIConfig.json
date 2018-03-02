@@ -3,5 +3,18 @@
     "label": "TRANSLATE.PLUGIN_CONFIGURATION"
   },
   "sections": [
-  ]
+ {
+    "id": "Test plane",
+    "element": "section",
+    "label": "Spotify account",
+    "icon": "fa-plug",
+    "onSave": {"type":"controller", "endpoint":"music_service/spop", "method":"saveSpotifyAccount"},
+    "saveButton": {
+      "label": "Save",
+      "data": [
+        "username",
+        "password",
+        "bitrate"
+      ]
+    }
 }
